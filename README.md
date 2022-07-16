@@ -5,7 +5,7 @@ Phishing is a type of fraud in which an attacker impersonates a reputable compan
 ## Project Statement 
 Predict whether the URL is safe or malicious.
 
-## Datasset Link 
+## Dataset Link 
 https://www.kaggle.com/code/siddharthkumar25/detect-malicious-url-using-ml/data
 
 
