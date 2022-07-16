@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		h2{text-align: center;}
+		body{
+		background-image:url({{url_for('static',filename='New/Untitled.jpg')}});
+		background-repeat : no-repeat;
+		background-attachment:fixed;
+		background-size:100%100%;
+		}
+</style>
+
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<center>
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Machine Learning with Flask
+		</div>
+		<h2>Phishing URL Detection</h2>
+			<style>
+				h2 {color : #ff0000}
+			</style>
+		</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>URL Analysis Report</b></p>
+	<div class="results">
+
+
+
+		{% if prediction == 'malicious'%}
+	<h2 style="color:red;">This URL is rated malicious</h2>
+	{% elif prediction == 'benign'%}
+	<h2 style="color:#12ad2b;">This URL is rated safe</h2>
+	{% endif %}
+
+	</div>
+</center>
+</body>
+</html>
